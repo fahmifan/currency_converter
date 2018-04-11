@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="monospace"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="monospace"
+        android:onClick="onBtnBack"
+        android:text="Back" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textAlignment="viewStart"
+            android:id="@+id/currency"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Masukkan nilai mata uang(Rp)"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/input_val"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:inputType="numberDecimal"
+                android:text="" />
+
+            <Button
+                android:id="@+id/process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Process" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:textAlignment="textStart">
+
+            <TextView
+                android:id="@+id/rp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/yen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/euro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
