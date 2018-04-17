@@ -1,6 +1,6 @@
 package io.github.fahmifan.a140810160028;
 
-public class Conversi {
+public class Conversion {
     Keys keys;
 
     /**
@@ -20,14 +20,14 @@ public class Conversi {
      */
     private String baseCurrency;
 
-    public Conversi(String baseCurrency, double inputCurrency) {
+    public Conversion(String baseCurrency, double inputCurrency) {
         this.baseCurrency = baseCurrency;
         this.inputCurrency = inputCurrency;
         convertToUSD();
     }
 
     /**
-     * Conver the @inputCurrency to USD
+     * Convert the @inputCurrency to USD
      */
     private void convertToUSD() {
         if (this.baseCurrency == keys.RUPIAH) {

@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    Keys keys;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,25 +14,25 @@ public class MainActivity extends AppCompatActivity {
 
     public void onRupiah(View view) {
         Intent i = new Intent(this, Main2Activity.class);
-        i.putExtra(keys.RUPIAH, keys.RUPIAH);
+        i.putExtra(Keys.CURRENCY, Keys.RUPIAH);
         startActivity(i);
     }
 
     public void onUsd(View view) {
         Intent i = new Intent(this, Main2Activity.class);
-        i.putExtra(keys.USD, keys.USD);
+        i.putExtra(Keys.CURRENCY, Keys.USD);
         startActivity(i);
     }
 
     public void onYen(View view) {
         Intent i = new Intent(this, Main2Activity.class);
-        i.putExtra(keys.YEN, keys.YEN);
+        i.putExtra(Keys.CURRENCY, Keys.YEN);
         startActivity(i);
     }
 
     public void onEuro(View view) {
         Intent i = new Intent(this, Main2Activity.class);
-        i.putExtra(keys.EURO, keys.EURO);
+        i.putExtra(Keys.CURRENCY, Keys.EURO);
         startActivity(i);
     }
 }
